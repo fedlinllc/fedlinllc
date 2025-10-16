@@ -1,16 +1,15 @@
-## Hi there 👋
+<!-- Profile README for github.com/fedlinllc -->
 
-<!--
-**fedlinllc/fedlinllc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h1 align="center">FEDLIN — Public Portfolio</h1>
+<p align="center"><em>Security engineering labs & reproducible builds. Linux-first: Ubuntu & Debian.</em></p>
+---
 
-Here are some ideas to get you started:
+### Featured
+**Project 0 — Secure CI/CD Baseline**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[![Deploy: main](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-secure-cicd)
+
+---
+
+### Stack
+`Linux (Ubuntu, Debian)` · `Cloud platforms` · `CI/CD` · `OIDC / identity federation` · `Policy-as-code` · `IaC` · `Observability / logging` · `Detection engineering`
