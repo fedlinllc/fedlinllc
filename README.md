@@ -1,7 +1,7 @@
 <!-- Profile README for github.com/fedlinllc -->
 
 <h1 align="center">FEDLIN — Public Portfolio</h1>
-<p align="center"><em>Security engineering labs. Linux-first: Ubuntu & Debian.</em></p>
+<p align="center"><em>Security Engineering Labs.</em></p>
 ---
 
 ### Featured
