@@ -10,13 +10,10 @@
 **Project 0 — Secure CI/CD Baseline**  
 <sub>Provision + verify Azure infra with OIDC-only pipelines and machine-readable outputs for downstream labs.</sub>  
 [![Deploy: main](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml)  
-[Run Project 0](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml) · [README](https://github.com/fedlinllc/fedlin-azure-secure-cicd#readme)
 
 **Project 1 — Sentinel Vulnerability & Compliance Lab**  
 <sub>Wire Microsoft Sentinel to LAW, enable data connectors, seed analytics, and ship evidence via GitHub Actions (OIDC only).</sub>  
 [![Sentinel Lab: main](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml)  
-[Run Project 1](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml) · [README](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab#readme)  
-📸 Evidence: [Screenshots](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/tree/main/docs/evidence) · [Artifacts](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions)
 
 ---
 
