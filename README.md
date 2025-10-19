@@ -10,7 +10,7 @@
 
 ---
 
-### Featured
+### Featured - Azure
 
 **Project 0 — Secure CI/CD Baseline**  
 <sub>Provision + verify Azure infra with OIDC-only pipelines and machine-readable outputs for downstream labs.</sub>  
