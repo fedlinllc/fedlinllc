@@ -18,18 +18,17 @@
 ![Astro](https://img.shields.io/badge/Web-Astro-0F172A)
 ![License: MIT](https://img.shields.io/badge/License-MIT-success)
 
-
 ---
 
 ### Stack
-`Identity & Access (OIDC/SSO: Entra ID, IAM Identity Center)` · `IAM/RBAC/ABAC` ·
-`AWS (API Gateway, Lambda, S3, CloudFront, WAF)` · `Azure (ARM, APIM, Storage)` ·
-`IaC (Terraform, Bicep)` · `Policy-as-code (AWS SCP/IAM, Azure Policy)` ·
-`CI/CD (GitHub Actions, OIDC federation)` ·
-`Observability (CloudWatch/CloudTrail, Log Analytics, Sentinel)` ·
-`Compliance automation (AWS Config, Security Hub, evidence workflows)` ·
-`Networking & App Security (TLS, CORS, rate limiting)` ·
-`Serverless & APIs (HTTP v2, event patterns)` ·
+`Identity & Access (OIDC/SSO: Entra ID, IAM Identity Center)` · `IAM / RBAC / ABAC` ·  
+`AWS (API Gateway, Lambda, S3, CloudFront, WAF)` · `Azure (ARM, APIM, Storage)` ·  
+`IaC (Terraform, Bicep)` · `Policy-as-code (AWS SCP/IAM, Azure Policy)` ·  
+`CI/CD (GitHub Actions, OIDC federation)` ·  
+`Observability (CloudWatch/CloudTrail, Log Analytics, Sentinel)` ·  
+`Compliance automation (AWS Config, Security Hub, evidence workflows)` ·  
+`Networking & App Security (TLS, CORS, rate limiting)` ·  
+`Serverless & APIs (HTTP v2, event patterns)` ·  
 `Linux (Ubuntu/Debian)` · `Vercel` · `Astro`
 
 ---
