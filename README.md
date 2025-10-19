@@ -6,7 +6,15 @@
 ---
 
 ### Stack
-`Linux (Ubuntu, Debian)` · `Cloud platforms` · `CI/CD` · `OIDC / identity federation` · `Policy-as-code` · `IaC` · `Observability / logging` · `Detection engineering`
+`Identity & Access (OIDC/SSO: Entra ID, IAM Identity Center)` · `IAM/RBAC/ABAC` ·
+`AWS (API Gateway, Lambda, S3, CloudFront, WAF)` · `Azure (ARM, APIM, Storage)` ·
+`IaC (Terraform, Bicep)` · `Policy-as-code (AWS SCP/IAM, Azure Policy)` ·
+`CI/CD (GitHub Actions, OIDC federation)` ·
+`Observability (CloudWatch/CloudTrail, Log Analytics, Sentinel)` ·
+`Compliance automation (AWS Config, Security Hub, evidence workflows)` ·
+`Networking & App Security (TLS, CORS, rate limiting)` ·
+`Serverless & APIs (HTTP v2, event patterns)` ·
+`Linux (Ubuntu/Debian)` · `Vercel` · `Astro`
 
 ---
 
