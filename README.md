@@ -73,3 +73,4 @@ flowchart LR
   end
   SSO -.operations.-> APIGW
   CORS -.enforcement.-> APIGW
+::contentReference[oaicite:0]{index=0}
