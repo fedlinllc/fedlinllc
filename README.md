@@ -53,7 +53,7 @@ flowchart LR
 ## Featured — AWS
 
 <a href="https://github.com/fedlinllc/fedlin-vercel-aws-baseline"><b>Vercel × AWS Baseline for Regulated Apps</b></a>  
-<sub>Astro on Vercel in front, API Gateway/Lambda in back — SSO-operated, CORS-locked, and compliance-ready via optional evidence automation.</sub>
+<sub>Astro on Vercel in front, API Gateway/Lambda in back — SSO-operated, CORS-locked, and compliance-ready via an optional evidence add-on.</sub>
 
 [![Demo](https://img.shields.io/badge/demo-live-0F766E)](https://fedlin-vercel-aws-baseline.vercel.app)
 [![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/releases/tag/v0.1.0-showcase)
@@ -71,6 +71,5 @@ flowchart LR
     SSO[SSO — IAM Identity Center]
     CORS[CORS — Prod origin only]
   end
-  SSO -.operations.-> APIGW
-  CORS -.enforcement.-> APIGW
-::contentReference[oaicite:0]{index=0}
+  SSO -. operations .-> APIGW
+  CORS -. enforcement .-> APIGW
