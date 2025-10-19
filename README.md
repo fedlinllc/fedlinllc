@@ -49,3 +49,13 @@ flowchart LR
 `Linux (Ubuntu, Debian)` · `Cloud platforms` · `CI/CD` · `OIDC / identity federation` · `Policy-as-code` · `IaC` · `Observability / logging` · `Detection engineering`
 
 ---
+
+## Featured
+
+
+<a href="https://github.com/fedlinllc/fedlin-vercel-aws-baseline"><b>Vercel × AWS Baseline for Regulated Apps</b></a>
+
+Astro on Vercel + API Gateway/Lambda — **SSO-operated, CORS-locked, compliance-ready** (evidence add-on).
+
+[![Demo](https://img.shields.io/badge/demo-live-0F766E)](https://fedlin-vercel-aws-baseline.vercel.app) [![Release](https://img.shields.io/badge/showcase-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/releases/tag/v0.1.0-showcase) [![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline)
+
