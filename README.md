@@ -3,6 +3,22 @@
 <h1 align="center">FEDLIN — Public Portfolio</h1>
 <p align="center"><em>Security Engineering Labs.</em></p>
 
+### Tech
+![OIDC / SSO](https://img.shields.io/badge/Auth-OIDC%20%2F%20SSO-0F766E)
+![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?logo=microsoft-azure&logoColor=white)
+![AWS](https://img.shields.io/badge/Cloud-AWS-232F3E?logo=amazon-aws&logoColor=white)
+![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)
+![Bicep](https://img.shields.io/badge/IaC-Bicep-0A84FF)
+![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+![Sentinel](https://img.shields.io/badge/SIEM-Sentinel-4B5563)
+![CloudWatch](https://img.shields.io/badge/Observability-CloudWatch-4B5563)
+![API Gateway](https://img.shields.io/badge/Serverless-API_Gateway-111827)
+![Lambda](https://img.shields.io/badge/Serverless-Lambda-F90?logo=awslambda&logoColor=white)
+![Vercel](https://img.shields.io/badge/Web-Vercel-111827?logo=vercel&logoColor=white)
+![Astro](https://img.shields.io/badge/Web-Astro-0F172A)
+![License: MIT](https://img.shields.io/badge/License-MIT-success)
+
+
 ---
 
 ### Stack
@@ -18,6 +34,7 @@
 
 ---
 
+
 ### Featured - Azure
 
 **Project 0 — Secure CI/CD Baseline**  
@@ -28,15 +45,6 @@
 <sub>Wire Microsoft Sentinel to LAW, enable data connectors, seed analytics, and ship evidence via GitHub Actions (OIDC only).</sub>  
 [![Sentinel Lab: main](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml)  
 
----
-
-### Tech
-![Azure](https://img.shields.io/badge/Cloud-Azure-informational?logo=microsoft-azure&logoColor=white)
-![Sentinel](https://img.shields.io/badge/SIEM-Sentinel-informational)
-![KQL](https://img.shields.io/badge/Query-KQL-informational)
-![GitHub Actions](https://img.shields.io/badge/CI-GitHub_Actions-informational?logo=githubactions&logoColor=white)
-![OIDC](https://img.shields.io/badge/Auth-OIDC-informational)
-![License: MIT](https://img.shields.io/badge/License-MIT-success)
 
 ---
 
