@@ -5,6 +5,11 @@
 
 ---
 
+### Stack
+`Linux (Ubuntu, Debian)` · `Cloud platforms` · `CI/CD` · `OIDC / identity federation` · `Policy-as-code` · `IaC` · `Observability / logging` · `Detection engineering`
+
+---
+
 ### Featured
 
 **Project 0 — Secure CI/CD Baseline**  
@@ -43,10 +48,6 @@ flowchart LR
 - [x] Project 1: Sentinel Vulnerability & Compliance Lab  
 - [ ] Project 2: Hardening & Remediation (Defender assessments → Ansible → re-assessment)
 
----
-
-### Stack
-`Linux (Ubuntu, Debian)` · `Cloud platforms` · `CI/CD` · `OIDC / identity federation` · `Policy-as-code` · `IaC` · `Observability / logging` · `Detection engineering`
 
 ---
 
