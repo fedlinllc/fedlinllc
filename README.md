@@ -64,12 +64,15 @@ flowchart LR
 ### AWS Flow (high-level)
 ```mermaid
 flowchart LR
-  FE[Vercel (Astro)] --> APIGW[API Gateway (HTTP v2)]
-  APIGW --> LBD[Lambda /health]
-  LBD --> S3[(S3 — Evidence artifacts)]
+  FE["Vercel (Astro)"] --> APIGW["API Gateway (HTTP v2)"]
+  APIGW --> LBD["Lambda /health"]
+  LBD --> S3["S3 (evidence artifacts)"]
+
   subgraph Controls
-    SSO[SSO — IAM Identity Center]
-    CORS[CORS — Prod origin only]
+    SSO["SSO (IAM Identity Center)"]
+    CORS["CORS (prod origin only)"]
   end
+
   SSO -. operations .-> APIGW
   CORS -. enforcement .-> APIGW
+
