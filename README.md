@@ -50,12 +50,26 @@ flowchart LR
 
 ---
 
-## Featured
+## Featured — AWS
 
+<a href="https://github.com/fedlinllc/fedlin-vercel-aws-baseline"><b>Vercel × AWS Baseline for Regulated Apps</b></a>  
+<sub>Astro on Vercel in front, API Gateway/Lambda in back — SSO-operated, CORS-locked, and compliance-ready via optional evidence automation.</sub>
 
-<a href="https://github.com/fedlinllc/fedlin-vercel-aws-baseline"><b>Vercel × AWS Baseline for Regulated Apps</b></a>
+[![Demo](https://img.shields.io/badge/demo-live-0F766E)](https://fedlin-vercel-aws-baseline.vercel.app)
+[![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/releases/tag/v0.1.0-showcase)
+[![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline)
+[![CI](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/actions/workflows/ci.yml/badge.svg)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/blob/main/LICENSE)
 
-Astro on Vercel + API Gateway/Lambda — **SSO-operated, CORS-locked, compliance-ready** (evidence add-on).
-
-[![Demo](https://img.shields.io/badge/demo-live-0F766E)](https://fedlin-vercel-aws-baseline.vercel.app) [![Release](https://img.shields.io/badge/showcase-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/releases/tag/v0.1.0-showcase) [![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline)
-
+### AWS Flow (high-level)
+```mermaid
+flowchart LR
+  FE[Vercel (Astro)] --> APIGW[API Gateway (HTTP v2)]
+  APIGW --> LBD[Lambda /health]
+  LBD --> S3[(S3 — Evidence artifacts)]
+  subgraph Controls
+    SSO[SSO — IAM Identity Center]
+    CORS[CORS — Prod origin only]
+  end
+  SSO -.operations.-> APIGW
+  CORS -.enforcement.-> APIGW
