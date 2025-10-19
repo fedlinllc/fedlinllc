@@ -1,7 +1,7 @@
 <!-- Profile README for github.com/fedlinllc -->
 
 <h1 align="center">FEDLIN — Public Portfolio</h1>
-<p align="center"><em>Security Engineering Labs.</em></p>
+<p align="center"><em>Security Solutions Architecture.</em></p>
 
 ### Tech
 ![OIDC / SSO](https://img.shields.io/badge/Auth-OIDC%20%2F%20SSO-0F766E)
