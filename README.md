@@ -92,3 +92,11 @@ flowchart LR
   SSO -. operations .-> APIGW
   CORS -. enforcement .-> APIGW
 
+## Featured — GCP
+
+**HIPAA Readiness for Google Workspace + GCP (Showcase)**  
+Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — **SCC (Standard) at org scope** with guardrails across **Admin roles, Groups, Drive/Sharing, external access defaults** — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)
+
+- **Release:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases
+- **Showcase repo:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase
+- **Bookings:** https://www.fedlin.com/bookings
