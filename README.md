@@ -4,7 +4,7 @@
 <p align="center"><em>Security Solutions Architecture.</em></p>
 
 ### Tech
-![OIDC / SSO](https://img.shields.io/badge/Auth-OIDC%20%2F%20SSO-0F766E)
+![Auth — OIDC/SSO](https://img.shields.io/badge/Auth-OIDC%20%2F%20SSO-0F766E)
 ![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?logo=microsoft-azure&logoColor=white)
 ![AWS](https://img.shields.io/badge/Cloud-AWS-232F3E?logo=amazon-aws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)
@@ -33,21 +33,19 @@
 
 ---
 
-
-### Featured - Azure
+## Featured — Azure
 
 **Project 0 — Secure CI/CD Baseline**  
 <sub>Provision + verify Azure infra with OIDC-only pipelines and machine-readable outputs for downstream labs.</sub>  
-[![Deploy: main](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml)  
+[![Deploy: main](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-secure-cicd/actions/workflows/deploy-azure.yml)
 
 **Project 1 — Sentinel Vulnerability & Compliance Lab**  
 <sub>Wire Microsoft Sentinel to LAW, enable data connectors, seed analytics, and ship evidence via GitHub Actions (OIDC only).</sub>  
-[![Sentinel Lab: main](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml)  
-
+[![Sentinel Lab: main](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml/badge.svg?branch=main)](https://github.com/fedlinllc/fedlin-azure-cis-vulnerability-lab/actions/workflows/azure-sentinel-vulncomp-lab.yml)
 
 ---
 
-### Flow
+### Flow (Azure)
 ```mermaid
 flowchart LR
   P0[Project 0\nSecure CI/CD] -->|outputs.json| LAW[(Log Analytics Workspace)]
@@ -63,7 +61,6 @@ flowchart LR
 - [x] Project 1: Sentinel Vulnerability & Compliance Lab  
 - [ ] Project 2: Hardening & Remediation (Defender assessments → Ansible → re-assessment)
 
-
 ---
 
 ## Featured — AWS
@@ -77,7 +74,7 @@ flowchart LR
 [![CI](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/actions/workflows/ci.yml/badge.svg)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/blob/main/LICENSE)
 
-### AWS Flow (high-level)
+### Flow (AWS)
 ```mermaid
 flowchart LR
   FE["Vercel (Astro)"] --> APIGW["API Gateway (HTTP v2)"]
@@ -91,12 +88,14 @@ flowchart LR
 
   SSO -. operations .-> APIGW
   CORS -. enforcement .-> APIGW
+```
+---
 
 ## Featured — GCP
 
 **HIPAA Readiness for Google Workspace + GCP (Showcase)**  
-Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — **SCC (Standard) at org scope** with guardrails across **Admin roles, Groups, Drive/Sharing, external access defaults** — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)
+<sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
 
-- **Release:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases
-- **Showcase repo:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase
+- **Release:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases  
+- **Showcase repo:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase  
 - **Bookings:** https://www.fedlin.com/bookings
