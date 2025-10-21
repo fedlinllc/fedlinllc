@@ -93,19 +93,21 @@ flowchart LR
 
 ## Featured — GCP
 
-**HIPAA Readiness for Google Workspace + GCP (Showcase)**  
+<a href="https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase"><b>HIPAA Readiness for Google Workspace + GCP (Showcase)</b></a>  
 <sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
 
 [![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
 [![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/blob/main/LICENSE)
 [![Book](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
+<!-- If/when you add a CI workflow in the showcase repo, you can also show it:
+[![CI](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/actions/workflows/ci.yml/badge.svg)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/actions/workflows/ci.yml)
+-->
 
 ### Flow (GCP + Workspace)
 ```mermaid
 flowchart LR
-  Buyer["Owner / Practice Manager"]
-  Intake["Intake & Access<br/>(Temp Super Admin or screenshare)"]
-  Buyer --> Intake
+  Buyer["Owner / Practice Manager"] --> Intake["Intake & Access<br/>(Temp Super Admin or screenshare)"]
 
   subgraph Workspace["Google Workspace"]
     Admin["Admin Roles<br/>Hygiene"]
@@ -129,6 +131,6 @@ flowchart LR
   end
 
   Intake --> Admin
-  GuardrailsW --> Handoff["Readiness Summary<br/>(Exec 1‑pager + Operator checklist)"]
-  SCC --> Monitor["Org‑Scoped Monitoring<br/>& Findings"]
+  GuardrailsW --> Handoff["Readiness Summary<br/>(Exec 1-pager + Operator checklist)"]
+  SCC --> Monitor["Org-Scoped Monitoring<br/>& Findings"]
 ```
