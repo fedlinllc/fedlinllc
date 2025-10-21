@@ -96,6 +96,40 @@ flowchart LR
 **HIPAA Readiness for Google Workspace + GCP (Showcase)**  
 <sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
 
-- **Release:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases  
-- **Showcase repo:** https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase  
-- **Bookings:** https://www.fedlin.com/bookings
+[![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
+[![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
+[![Bookings](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
+
+### Flow (GCP + Workspace)
+```mermaid
+flowchart LR
+  %% Personas / entry
+  Buyer["Owner / Practice Manager"] --> Intake["Intake & Access\n(Temp Super Admin or guided screenshare)"]
+
+  %% Workspace guardrails
+  subgraph Workspace["Google Workspace"]
+    Admin["Admin Roles Hygiene"]
+    Groups["Groups (Access Patterns)"]
+    Sharing["Drive / Sharing Defaults"]
+    External["External Access Defaults"]
+  end
+
+  Intake --> Admin
+  Admin --> GuardrailsW["Applied Guardrails\n(Workspace)"]
+  Groups --> GuardrailsW
+  Sharing --> GuardrailsW
+  External --> GuardrailsW
+
+  %% GCP guardrails
+  subgraph GCP["Google Cloud (Initial Guardrails)"]
+    OrgPolicies["Org Policies (High Level)"]
+    ProjGuard["Project Guardrails"]
+    SCC["Security Command Center (Standard)\nOrg Scope"]
+  end
+
+  GuardrailsW --> Handoff["Readiness Summary\n(Exec 1-pager + Operator checklist)"]
+  OrgPolicies --> ProjGuard
+  OrgPolicies --> SCC
+  ProjGuard --> SCC
+  SCC --> Monitor["Org-Scoped Monitoring & Findings"]
+::contentReference[oaicite:0]{index=0}
