@@ -100,35 +100,47 @@ flowchart LR
 [![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
 [![Bookings](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
 
+## Featured — GCP
+
+**HIPAA Readiness for Google Workspace + GCP (Showcase)**  
+<sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
+
+[![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
+[![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
+[![Book](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
+
 ### Flow (GCP + Workspace)
 ```mermaid
 flowchart LR
-  %% Personas / entry
-  Buyer["Owner / Practice Manager"] --> Intake["Intake & Access\n(Temp Super Admin or guided screenshare)"]
+  Buyer["Owner / Practice Manager"] --> Intake["Intake & Access<br/>(Temp Super Admin or Screenshare)"]
 
   %% Workspace guardrails
   subgraph Workspace["Google Workspace"]
-    Admin["Admin Roles Hygiene"]
-    Groups["Groups (Access Patterns)"]
-    Sharing["Drive / Sharing Defaults"]
-    External["External Access Defaults"]
+    Admin["Admin Roles<br/>Hygiene"]
+    Groups["Groups<br/>(Access Patterns)"]
+    Sharing["Drive / Sharing<br/>Defaults"]
+    External["External Access<br/>Defaults"]
   end
 
   Intake --> Admin
-  Admin --> GuardrailsW["Applied Guardrails\n(Workspace)"]
+  Admin --> GuardrailsW["Applied Guardrails<br/>(Workspace)"]
   Groups --> GuardrailsW
   Sharing --> GuardrailsW
   External --> GuardrailsW
 
-  %% GCP guardrails
+  %% GCP initial guardrails
   subgraph GCP["Google Cloud (Initial Guardrails)"]
-    OrgPolicies["Org Policies (High Level)"]
+    OrgPolicies["Org Policies<br/>(High Level)"]
     ProjGuard["Project Guardrails"]
-    SCC["Security Command Center (Standard)\nOrg Scope"]
+    SCC["Security Command Center<br/>(Standard, Org Scope)"]
   end
 
-  GuardrailsW --> Handoff["Readiness Summary\n(Exec 1-pager + Operator checklist)"]
+  GuardrailsW --> Handoff["Readiness Summary<br/>(Exec 1-pager + Operator checklist)"]
   OrgPolicies --> ProjGuard
+  OrgPolicies --> SCC
+  ProjGuard --> SCC
+  SCC --> Monitor["Org-Scoped Monitoring<br/>& Findings"]
+
   OrgPolicies --> SCC
   ProjGuard --> SCC
   SCC --> Monitor["Org-Scoped Monitoring & Findings"]
