@@ -98,24 +98,6 @@ flowchart LR
 
 [![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
 [![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
-[![Bookings](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
-
-## Featured — GCP
-
-**HIPAA Readiness for Google Workspace + GCP (Showcase)**  
-<sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
-
-[![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
-[![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
-[![Book](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
-
-## Featured — GCP
-
-**HIPAA Readiness for Google Workspace + GCP (Showcase)**  
-<sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
-
-[![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
-[![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
 [![Book](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
 
 ### Flow (GCP + Workspace)
