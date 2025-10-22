@@ -87,7 +87,7 @@ flowchart LR
 [![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/releases/tag/v0.1.0-showcase)
 [![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline)
 [![CI](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/actions/workflows/ci.yml/badge.svg)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)](https://github.com/fedlinllc/fedlin-vercel-aws-baseline/blob/main/LICENSE)
 
 ### Flow (AWS)
 ```mermaid
@@ -111,12 +111,12 @@ flowchart LR
 <a href="https://github.com/fedlinllc/fedlin-gws-hipaa-baseline"><b>HIPAA Readiness for Google Workspace + GCP </b></a>  
 <sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
 
-[![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
-[![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase)
+[![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gws-hipaa-baseline/releases/tag/v0.1.0)
+[![Repo](https://img.shields.io/badge/repo-open-111827)](https://github.com/fedlinllc/fedlin-gws-hipaa-baseline)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)](https://github.com/fedlinllc/fedlin-gws-hipaa-baseline/blob/main/LICENSE)
 [![Book](https://img.shields.io/badge/book-call-0F766E)](https://www.fedlin.com/bookings)
 <!-- If/when you add a CI workflow in the showcase repo, you can also show it:
-[![CI](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/actions/workflows/ci.yml/badge.svg)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/actions/workflows/ci.yml)
+[![CI](https://github.com/fedlinllc/fedlin-gws-hipaa-baseline/actions/workflows/ci.yml/badge.svg)](https://github.com/fedlinllc/fedlin-gws-hipaa-baseline/actions/workflows/ci.yml)
 -->
 
 ### Flow (GCP + Workspace)
