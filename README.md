@@ -93,7 +93,7 @@ flowchart LR
 
 ## Featured — GCP
 
-<a href="https://github.com/fedlinllc/fedlin-gws-hipaa-baseline"><b>HIPAA Readiness for Google Workspace + GCP (Showcase)</b></a>  
+<a href="https://github.com/fedlinllc/fedlin-gws-hipaa-baseline"><b>HIPAA Readiness for Google Workspace + GCP </b></a>  
 <sub>Fixed-scope deployment to bring Google Workspace under HIPAA-aligned controls — <b>SCC (Standard) at org scope</b> with guardrails across <b>Admin roles, Groups, Drive/Sharing, external access defaults</b> — plus a documented readiness summary. (No public screenshots/how-tos; evidence stays in tenant.)</sub>
 
 [![Showcase](https://img.shields.io/badge/release-v0.1.0-334155)](https://github.com/fedlinllc/fedlin-gcp-hipaa-showcase/releases/tag/v0.1.0)
