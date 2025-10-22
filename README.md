@@ -1,6 +1,6 @@
 <!-- Profile README for github.com/fedlinllc -->
 
-<h1 align="center">FEDLIN — Public Portfolio</h1>
+<h1 align="center">FEDLIN</h1>
 <p align="center"><em>Security Solutions Architecture.</em></p>
 
 ### Skills
