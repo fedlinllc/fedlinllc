@@ -3,20 +3,35 @@
 <h1 align="center">FEDLIN — Public Portfolio</h1>
 <p align="center"><em>Security Solutions Architecture.</em></p>
 
+### Skills
+`Discovery & Requirements (stakeholder interviews, constraints, SLAs)` ·
+`Solution Architecture (reference designs, integration patterns, data flows)` ·
+`Identity & Access (OIDC/SSO, IAM/RBAC/ABAC, least privilege)` ·
+`Security & Governance (SCC Standard, Guardrails, Policy-as-Code, secrets hygiene)` ·
+`Landing Zones & Baselines (Workspace hardening, org policies, account structure)` ·
+`API & App Patterns (HTTP v2, async events, zero-trust edges, rate limiting)` ·
+`Delivery (IaC: Terraform/Bicep, GitHub Actions via OIDC, reviews & change mgmt)` ·
+`Reliability & Ops (observability, runbooks, error budgets, incident basics)` ·
+`Compliance Enablement (evidence automation, audit trails, DR/BCP touchpoints)`
+
+
 ### Tech
-![Auth — OIDC/SSO](https://img.shields.io/badge/Auth-OIDC%20%2F%20SSO-0F766E)
-![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?logo=microsoft-azure&logoColor=white)
+![Solution Architecture](https://img.shields.io/badge/Role-Solution_Architecture-334155)
+![OIDC / SSO](https://img.shields.io/badge/Auth-OIDC%20%2F%20SSO-0F766E)
+![Google Workspace Admin](https://img.shields.io/badge/Google-Workspace%20Admin-4285F4?logo=google&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Cloud-Google%20Cloud-4285F4?logo=googlecloud&logoColor=white)
+![SCC Standard](https://img.shields.io/badge/Security-SCC%20(Standard)-334155)
+![Email Auth: SPF · DKIM · DMARC](https://img.shields.io/badge/DNS-Email%20Auth%3A%20SPF%20%C2%B7%20DKIM%20%C2%B7%20DMARC-334155)
 ![AWS](https://img.shields.io/badge/Cloud-AWS-232F3E?logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?logo=microsoft-azure&logoColor=white)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)
 ![Bicep](https://img.shields.io/badge/IaC-Bicep-0A84FF)
-![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
-![Sentinel](https://img.shields.io/badge/SIEM-Sentinel-4B5563)
-![CloudWatch](https://img.shields.io/badge/Observability-CloudWatch-4B5563)
-![API Gateway](https://img.shields.io/badge/Serverless-API_Gateway-111827)
-![Lambda](https://img.shields.io/badge/Serverless-Lambda-F90?logo=awslambda&logoColor=white)
+![GitHub Actions (OIDC)](https://img.shields.io/badge/CI%2FCD-GitHub_Actions_(OIDC)-2088FF?logo=githubactions&logoColor=white)
+![Gitleaks](https://img.shields.io/badge/SecOps-Gitleaks-334155)
+![Dependabot](https://img.shields.io/badge/Supply_Chain-Dependabot-334155)
 ![Vercel](https://img.shields.io/badge/Web-Vercel-111827?logo=vercel&logoColor=white)
 ![Astro](https://img.shields.io/badge/Web-Astro-0F172A)
-![License: MIT](https://img.shields.io/badge/License-MIT-success)
+
 
 ---
 
@@ -29,7 +44,7 @@
 `Compliance automation (AWS Config, Security Hub, evidence workflows)` ·  
 `Networking & App Security (TLS, CORS, rate limiting)` ·  
 `Serverless & APIs (HTTP v2, event patterns)` ·  
-`Linux (Ubuntu/Debian)` · `Vercel` · `Astro`
+`Linux (Fedora/Ubuntu/Debian)` · `Vercel` · `Astro`
 
 ---
 
