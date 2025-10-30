@@ -1,32 +1,34 @@
 <h1 align="center">FEDLIN</h1>
-<p align="center"><b>Security Solutions Architecture · Cloud/SaaS Hardening · Evidence-Driven Compliance</b></p>
+<p align="center"><b>Security Solutions Architecture · Vulnerability Management · Compliance Automation</b></p>
 <p align="center">Independent / C2C · Subcontract-ready · Customer-tenant-first</p>
 
 <p align="center">
-  <!-- cloud platforms -->
+  <!-- primary estate targets -->
   <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config%20·%20Security%20Hub-blue" />
-  <img src="https://img.shields.io/badge/M365-Entra%20ID%20·%20Conditional%20Access-blueviolet" />
-  <img src="https://img.shields.io/badge/GWS-SaaS%20Security%20·%20HIPAA-green" />
-  <!-- delivery -->
+  <img src="https://img.shields.io/badge/Azure-Entra%20ID%20·%20Defender%20·%20Policies-0078D4" />
+  <img src="https://img.shields.io/badge/GCP-Org%20Policies%20·%20Security%20Command%20Center-4285F4" />
+  <!-- SaaS hardening you actually sell -->
+  <img src="https://img.shields.io/badge/M365-Entra%20Hardening-blueviolet" />
+  <img src="https://img.shields.io/badge/GWS-HIPAA%20Baseline-green" />
+  <!-- delivery + compliance -->
   <img src="https://img.shields.io/badge/GitHub%20Actions-OIDC%20CI%2FCD-important" />
-  <!-- compliance -->
   <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001%20·%20HIPAA-lightgrey" />
 </p>
 
 ## About
 
-FEDLIN is a security engineering and compliance automation consultancy. We build **customer-tenant-first** solutions — evidence, logs, and configuration stay in **your** AWS, Microsoft 365 / Entra, or Google Workspace environment — and we deliver changes through **GitHub Actions with OIDC** so there are no long-lived secrets to rotate or vault.
+FEDLIN is a security engineering and compliance automation consultancy. We build **customer-tenant-first** solutions — evidence, logs, and configuration stay in **your** AWS, Azure/Entra, Microsoft 365, Google Workspace, or GCP environment — and we deliver changes through **GitHub Actions with OIDC** so there are no long-lived secrets to rotate or vault.
 
-We’re a good fit for security teams, MSPs, and primes who need to **show AWS/M365 security posture** and **leave the evidence with the customer** — the way SOC 2 / ISO 27001 / HIPAA reviews actually expect. :contentReference[oaicite:5]{index=5}
+We work well with security teams, MSPs, and primes that need to **show** cloud/SaaS security posture and **leave the evidence with the customer** — the way SOC 2, ISO 27001, and HIPAA-style reviews actually expect.
 
 ## What we deliver
 
-- **AWS Security Baseline** — CloudTrail, Config, IAM hygiene, Security Hub/GuardDuty ready; documented for SOC 2 / ISO 27001 reviewers. :contentReference[oaicite:6]{index=6}
-- **AWS “VistaSec” CMC** — monitoring/reporting layer on top of the baseline so stakeholders can prove posture on demand. :contentReference[oaicite:7]{index=7}
-- **M365 / Entra Security Baseline** — MFA/Conditional Access, admin-role separation, collaboration/sharing controls, eDiscovery/audit readiness. :contentReference[oaicite:8]{index=8}
-- **Google Workspace HIPAA Baseline** — GWS hardening for telehealth / therapy / PHI-adjacent orgs; tenant-safe. :contentReference[oaicite:9]{index=9}
-- **DMARC / SPF / DKIM** — email/DNS authentication for Microsoft 365 and Google Workspace, with optional CI-based validation.
-- **All delivered via GitHub Actions (OIDC-only)** — modern, secretless, contractor-friendly delivery. :contentReference[oaicite:10]{index=10}
+- **AWS Security Baseline** — CloudTrail, Config, IAM hygiene, Security Hub/GuardDuty ready, documented for SOC 2 / ISO 27001.
+- **AWS “VistaSec” CMC** — monitoring/reporting layer on top of the baseline so stakeholders can prove posture on demand.
+- **M365 / Entra Security Baseline** — MFA/Conditional Access, admin-role separation, collaboration/sharing controls, eDiscovery/audit readiness.
+- **Google Workspace HIPAA Baseline** — GWS hardening for telehealth / therapy / PHI-adjacent orgs; tenant-safe.
+- **DMARC / SPF / DKIM** — email/DNS authentication for M365 and GWS, with optional CI-based validation.
+- **All delivered via GitHub Actions (OIDC-only)** — modern, secretless, delivery.
 
 
 1) AWS Security Baseline
