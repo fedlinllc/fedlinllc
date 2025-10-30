@@ -22,69 +22,84 @@ FEDLIN is a security engineering and compliance automation consultancy. We build
 
 We work well with security teams, MSPs, and primes that need to **show** cloud/SaaS security posture and **leave the evidence with the customer** — the way SOC 2, ISO 27001, and HIPAA-style reviews actually expect.
 
-## What we deliver
+## What We Deliver
 
-- **AWS Security Baseline** — CloudTrail, Config, IAM hygiene, Security Hub/GuardDuty ready, documented for SOC 2 / ISO 27001.
-- **AWS “VistaSec” CMC** — monitoring/reporting layer on top of the baseline so stakeholders can prove posture on demand.
-- **M365 / Entra Security Baseline** — MFA/Conditional Access, admin-role separation, collaboration/sharing controls, eDiscovery/audit readiness.
-- **Google Workspace HIPAA Baseline** — GWS hardening for telehealth / therapy / PHI-adjacent orgs; tenant-safe.
-- **DMARC / SPF / DKIM** — email/DNS authentication for M365 and GWS, with optional CI-based validation.
-- **All delivered via GitHub Actions (OIDC-only)** — modern, secretless, delivery.
+### AWS Security Baseline
+Hardens an AWS account with CloudTrail (all regions), AWS Config, IAM hygiene, and customer-owned logging — written in the style SOC 2 / ISO 27001 reviewers expect.
+↳ repo: https://github.com/fedlinllc/fedlin-aws-security-baseline
 
-
-1) AWS Security Baseline
-https://github.com/fedlinllc/fedlin-aws-security-baseline
+```mermaid
 flowchart LR
-    A[AWS Account] --> B[Enable CloudTrail<br/>all regions]
-    A --> C[Enable AWS Config<br/>baseline rules]
-    A --> D[IAM Hygiene<br/>root/MFA/policy]
-    B --> E[S3 Logging Bucket<br/>customer-owned]
+    A[AWS Account] --> B[CloudTrail<br/>all regions]
+    A --> C[AWS Config<br/>baseline rules]
+    A --> D[IAM hygiene<br/>root/MFA/policy]
+    B --> E[S3 logging bucket<br/>customer-owned]
     C --> E
-    D --> F[Evidence Captured<br/>in customer account]
-    G[GitHub Actions<br/>(OIDC)] --> A
-    G --> F
+    D --> F[Evidence noted<br/>for auditors]
+```
 
-2) AWS VistaSec CMC (continuous monitoring center)
-https://github.com/fedlinllc/fedlin-aws-vistasec-cmc
+---
+
+### AWS “VistaSec” CMC (Continuous Monitoring Center)
+Adds a monitoring/reporting layer on top of the baseline so security, compliance, or an MSP can **show** AWS posture on demand. Pairs with Security Hub / GuardDuty.
+↳ repo: https://github.com/fedlinllc/fedlin-aws-vistasec-cmc
+
+```mermaid
 flowchart LR
-    A[AWS Baseline Ready] --> B[Security Hub / GuardDuty]
-    B --> C[Findings / Alerts]
-    C --> D[VistaSec CMC View<br/>GitHub / Reports]
-    D --> E[Security / Compliance / MSP]
-    G[GitHub Actions<br/>(OIDC)] --> B
-    G --> D
-3) Microsoft 365 / Entra Security Baseline
-https://github.com/fedlinllc/fedlin-m365-security-baseline
+    A[Baseline enabled] --> B[Security Hub / GuardDuty]
+    B --> C[Findings stream]
+    C --> D[VistaSec CMC view<br/>GitHub / dashboard / report]
+    D --> E[Security · Compliance · MSP]
+```
+
+---
+
+### Microsoft 365 / Entra Security Baseline
+Identity-first hardening: MFA / Conditional Access, admin-role separation, safer sharing defaults, and audit/eDiscovery readiness — structured for repeatable delivery.
+↳ repo: https://github.com/fedlinllc/fedlin-m365-security-baseline
+
+```mermaid
 flowchart LR
-    A[Entra / M365 Tenant] --> B[Identity Hardening<br/>MFA + CA]
-    A --> C[Admin Role Separation]
-    A --> D[SharePoint / OneDrive<br/>sharing defaults]
+    A[M365 / Entra tenant] --> B[MFA / CA policies]
+    A --> C[Admin role separation]
+    A --> D[SharePoint / OneDrive safer sharing]
     A --> E[Audit / eDiscovery ready]
-    F[GitHub Actions<br/>(OIDC)] --> A
-    F --> E
-    E --> G[Evidence in customer tenant]
+    F[GitHub Actions (OIDC)] --> A
+```
 
-4) Google Workspace HIPAA Baseline
-https://github.com/fedlinllc/fedlin-gws-hipaa-baseline
-flowchart LR
-    A[Google Workspace Tenant] --> B[Admin / Role Hygiene]
-    A --> C[Sharing / Drive Controls<br/>(PHI-aware)]
-    A --> D[Security / 2SV Settings]
-    A --> E[Audit / Reports]
-    E --> F[Customer Evidence Folder]
-    G[GitHub Actions<br/>(OIDC-capable)] --> A
+---
 
-5) DMARC / SPF / DKIM
-https://github.com/fedlinllc/fedlin-dmarc-spf-dkim
+### Google Workspace HIPAA Baseline
+Workspace security for telehealth / therapy / PHI-adjacent orgs: admin hygiene, sharing controls, 2SV, and tenant-side evidence. Public brief only; deployment stays private.
+↳ repo: https://github.com/fedlinllc/fedlin-gws-hipaa-baseline
+
+```mermaid
 flowchart LR
-    A[Discover sending domains] --> B[SPF for M365/GWS]
+    A[GWS tenant] --> B[Admin / role hygiene]
+    A --> C[Drive / sharing controls<br/>PHI-aware]
+    A --> D[Security / 2SV enforced]
+    A --> E[Audit / reports<br/>kept in tenant]
+```
+
+---
+
+### Email Authentication (DMARC / SPF / DKIM)
+Aligns M365 or GWS mail with customer-owned DNS, safe DMARC rollout (none → monitor → enforce), and optional CI-based DNS validation.
+↳ repo: https://github.com/fedlinllc/fedlin-dmarc-spf-dkim
+
+```mermaid
+flowchart LR
+    A[Discover sending domains] --> B[SPF record<br/>for M365/GWS]
     A --> C[Enable DKIM]
-    A --> D[Create DMARC<br/>with reporting]
-    B --> E[Customer DNS Zone]
+    A --> D[DMARC record<br/>none → monitor → enforce]
+    B --> E[Customer DNS zone]
     C --> E
     D --> E
-    F[GitHub Actions DNS check<br/>(OIDC)] --> E
+```
 
+---
+
+All services follow the same delivery pattern — **`SERVICE_SCOPE.md` → `EVIDENCE_MODEL.md` → `DELIVERY_MODEL.md` → GitHub Actions (OIDC-only)** — so they’re easy to subcontract, audit, or hand to an MSP.
 
 How we engage (business / C2C)
 
