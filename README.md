@@ -56,14 +56,12 @@ Identity-first hardening: MFA / Conditional Access, admin-role separation, safer
 
 ```mermaid
 flowchart LR
-    A[M365 / Entra tenant] --> B[MFA / CA policies]
-    A --> C[Admin role separation]
-    A --> D[SharePoint / OneDrive safer sharing]
-    A --> E[Audit / eDiscovery ready]
-    F[GitHub Actions (OIDC)] --> A
-```
+    A[M365 / Entra tenant] --> B[MFA + CA]
+    A --> C[Admin roles separated]
+    A --> D[Safer sharing settings]
+    A --> E[Audit & eDiscovery ready]
+    F[GitHub Actions OIDC] --> A
 
----
 
 ### Google Workspace HIPAA Baseline
 Workspace security for telehealth / therapy / PHI-adjacent orgs: admin hygiene, sharing controls, 2SV, and tenant-side evidence. Public brief only; deployment stays private.
