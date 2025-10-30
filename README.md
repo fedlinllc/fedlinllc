@@ -2,17 +2,18 @@
 <p align="center"><b>Security Solutions Architecture · Vulnerability Management · Compliance Automation</b></p>
 <p align="center">Independent / C2C · Subcontract-ready · Customer-tenant-first</p>
 
+<h1 align="center">FEDLIN</h1>
+<p align="center"><b>Security Solutions Architecture · Vulnerability Management · Compliance Automation</b></p>
+<p align="center">Independent / C2C · Subcontract-ready · Customer-tenant-first</p>
+
 <p align="center">
-  <!-- primary estate targets -->
-  <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config%20·%20Security%20Hub-blue" />
-  <img src="https://img.shields.io/badge/Azure-Entra%20ID%20·%20Defender%20·%20Policies-0078D4" />
-  <img src="https://img.shields.io/badge/GCP-Org%20Policies%20·%20Security%20Command%20Center-4285F4" />
-  <!-- SaaS hardening you actually sell -->
-  <img src="https://img.shields.io/badge/M365-Entra%20Hardening-blueviolet" />
-  <img src="https://img.shields.io/badge/GWS-HIPAA%20Baseline-green" />
-  <!-- delivery + compliance -->
-  <img src="https://img.shields.io/badge/GitHub%20Actions-OIDC%20CI%2FCD-important" />
-  <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001%20·%20HIPAA-lightgrey" />
+  <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config%20·%20Security%20Hub-FF9900?logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure-Entra%20ID%20·%20Defender%20·%20Policy-0078D4?logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/GCP-Org%20Policies%20·%20SCC-4285F4?logo=googlecloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/M365-Entra%20Hardening-2358D5?logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/GWS-HIPAA%20Baseline-0F9D58?logo=googleworkspace&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-OIDC%20CI%2FCD-000000?logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001%20·%20HIPAA-6C757D" />
 </p>
 
 ## About
