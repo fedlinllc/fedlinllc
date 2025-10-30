@@ -88,7 +88,6 @@ Implements sender authentication for Microsoft 365 and Google Workspace domains 
 ---
 
 **Common delivery approach:** `SERVICE_SCOPE.md` → `EVIDENCE_MODEL.md` → `DELIVERY_MODEL.md` → GitHub Actions (OIDC-only), with Terraform/Bicep, policy-as-code, and bash/python automation applied where appropriate.
-::contentReference[oaicite:0]{index=0}
 
 
 ## How we engage (business / C2C)
