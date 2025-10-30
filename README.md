@@ -20,47 +20,62 @@ We work well with security teams, MSPs, and primes that need to **show** cloud/S
 
 ## What We Deliver
 
-### 1) AWS Security Baseline
-**What it is:** A starter-but-serious AWS hardening package.  
-**What it does:** Turns on CloudTrail in all regions, enables AWS Config with sensible rules, tightens IAM, and sends logs to a customer-owned location.  
-**Why it matters:** Looks like what SOC 2 / ISO 27001 reviewers expect to see when they ask “show me your logging and configuration posture.”  
-**Repo:** https://github.com/fedlinllc/fedlin-aws-security-baseline
+### AWS security you can show to an auditor
+<p>
+  <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config-FF9900?logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Delivery-GitHub%20Actions%20(OIDC)-000000?logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001-6C757D" />
+</p>
+CloudTrail everywhere, Config watching it, IAM cleaned up, logs in the customer account — i.e. “we’re not a wild AWS account anymore.”
+→ https://github.com/fedlinllc/fedlin-aws-security-baseline
 
 ---
 
-### 2) AWS “VistaSec” CMC (Continuous Monitoring Center)
-**What it is:** The “prove it” layer on top of the baseline.  
-**What it does:** Feeds AWS security signals (Security Hub, GuardDuty, etc.) into a view/report so security, compliance, or an MSP can actually **show** posture on demand.  
-**Why it matters:** Lots of people can turn Security Hub on — not many package it as a repeatable service with clear scope.  
-**Repo:** https://github.com/fedlinllc/fedlin-aws-vistasec-cmc
+### AWS monitoring that proves the baseline is working
+<p>
+  <img src="https://img.shields.io/badge/AWS-Security%20Hub%20·%20GuardDuty-FF9900?logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Use--case-Continuous%20Monitoring-blue" />
+  <img src="https://img.shields.io/badge/For-Security%20·%20Compliance%20·%20MSP-6C757D" />
+</p>
+Takes the baseline and adds a view/report so security/compliance/MSPs can **see** posture without asking for screenshots.
+→ https://github.com/fedlinllc/fedlin-aws-vistasec-cmc
 
 ---
 
-### 3) Microsoft 365 / Entra Security Baseline
-**What it is:** Identity-first hardening for M365/Entra.  
-**What it does:** Enforces MFA/Conditional Access, separates risky admin roles, dials back sharing defaults, and gets audit/eDiscovery ready.  
-**Why it matters:** This is *exactly* what most “M365 Security Engineer / Architect” job posts describe — you’re just showing it from a consulting org’s perspective.  
-**Repo:** https://github.com/fedlinllc/fedlin-m365-security-baseline
+### Microsoft 365 / Entra the way enterprises want it
+<p>
+  <img src="https://img.shields.io/badge/M365-MFA%20·%20CA-2358D5?logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/Entra-Admin%20role%20separation-0078D4?logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Outcome-Audit%20%2F%20eDiscovery%20ready-6C757D" />
+</p>
+MFA + CA, admin roles separated, sharing turned down, audit/eDiscovery ready — the standard enterprise M365 security ask.
+→ https://github.com/fedlinllc/fedlin-m365-security-baseline
 
 ---
 
-### 4) Google Workspace HIPAA Baseline
-**What it is:** A GWS security tune-up for telehealth/therapy/PHI-adjacent shops.  
-**What it does:** Cleans up admin roles, locks down Drive/sharing, enforces 2SV, and tells the customer where to keep evidence — without leaking tenant details to GitHub.  
-**Why it matters:** GWS security shows up less often than Microsoft, so having it here is a differentiator for recruiters.  
-**Repo:** https://github.com/fedlinllc/fedlin-gws-hipaa-baseline
+### Google Workspace, but safe for PHI-adjacent work
+<p>
+  <img src="https://img.shields.io/badge/GWS-Sharing%20controls-0F9D58?logo=googleworkspace&logoColor=white" />
+  <img src="https://img.shields.io/badge/Security-2SV%20·%20Admin%20hygiene-0F9D58?logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vertical-Telehealth%20%2F%20Therapy-orange" />
+</p>
+Admin/routing/sharing tightened, 2SV on, evidence stays in the tenant. Good for small practices and clinics.
+→ https://github.com/fedlinllc/fedlin-gws-hipaa-baseline
 
 ---
 
-### 5) Email Authentication (DMARC / SPF / DKIM)
-**What it is:** The “make your mail pass security reviews” service.  
-**What it does:** Configures SPF for M365/GWS, turns on DKIM, rolls out DMARC safely (none → monitor → enforce), and can validate via CI.  
-**Why it matters:** This is the small-but-annoying piece a lot of customers ask for after a security baseline — having it productized makes you look organized.  
-**Repo:** https://github.com/fedlinllc/fedlin-dmarc-spf-dkim
+### Email that actually passes security reviews
+<p>
+  <img src="https://img.shields.io/badge/Email-DMARC%20·%20SPF%20·%20DKIM-6C757D" />
+  <img src="https://img.shields.io/badge/DNS-Customer--owned-blue" />
+  <img src="https://img.shields.io/badge/Option-CI--based%20validation-000000?logo=githubactions&logoColor=white" />
+</p>
+SPF, DKIM, DMARC staged (none → monitor → enforce) so M365/GWS orgs can pass customer or security questionnaires.
+→ https://github.com/fedlinllc/fedlin-dmarc-spf-dkim
 
 ---
 
-**Delivery pattern for all of the above:** `SERVICE_SCOPE.md` → `EVIDENCE_MODEL.md` → `DELIVERY_MODEL.md` → GitHub Actions (OIDC-only). That’s why this is easy to subcontract or hand to an MSP.
+**Same delivery pattern across all services:** `SERVICE_SCOPE.md` → `EVIDENCE_MODEL.md` → `DELIVERY_MODEL.md` → GitHub Actions (OIDC-only).
 
 
 How we engage (business / C2C)
