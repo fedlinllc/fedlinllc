@@ -1,21 +1,33 @@
-<h1 align="center">FEDLIN</h1> <p align="center"><b>Security Solutions Architecture · Vulnerability Management · Compliance Automation</b></p> <p align="center">C2C / 1099 · Subcontract-ready · Customer-tenant-first</p> <p align="center"> <img src="https://img.shields.io/badge/AWS-Security%20Baseline-blue" /> <img src="https://img.shields.io/badge/M365-Entra%20Hardening-blueviolet" /> <img src="https://img.shields.io/badge/GWS-HIPAA%20Baseline-green" /> <img src="https://img.shields.io/badge/GitHub%20Actions-OIDC%20Only-important" /> <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001-lightgrey" /> </p>
-About
+<h1 align="center">FEDLIN</h1>
+<p align="center"><b>Security Solutions Architecture · Cloud/SaaS Hardening · Evidence-Driven Compliance</b></p>
+<p align="center">Independent / C2C · Subcontract-ready · Customer-tenant-first</p>
 
-FEDLIN is a security engineering and compliance automation consultancy. We design customer-tenant-first solutions — meaning evidence, logs, and configuration stay in your AWS / Microsoft 365 / Google Workspace environments — and we deliver them through GitHub Actions with OIDC so there are no long-lived secrets to manage.
+<p align="center">
+  <!-- cloud platforms -->
+  <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config%20·%20Security%20Hub-blue" />
+  <img src="https://img.shields.io/badge/M365-Entra%20ID%20·%20Conditional%20Access-blueviolet" />
+  <img src="https://img.shields.io/badge/GWS-SaaS%20Security%20·%20HIPAA-green" />
+  <!-- delivery -->
+  <img src="https://img.shields.io/badge/GitHub%20Actions-OIDC%20CI%2FCD-important" />
+  <!-- compliance -->
+  <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001%20·%20HIPAA-lightgrey" />
+</p>
 
-What we deliver
+## About
 
-AWS security baselines that map to SOC 2 / ISO 27001
+FEDLIN is a security engineering and compliance automation consultancy. We build **customer-tenant-first** solutions — evidence, logs, and configuration stay in **your** AWS, Microsoft 365 / Entra, or Google Workspace environment — and we deliver changes through **GitHub Actions with OIDC** so there are no long-lived secrets to rotate or vault.
 
-A continuous monitoring layer on top of AWS baselines (VistaSec CMC)
+We’re a good fit for security teams, MSPs, and primes who need to **show AWS/M365 security posture** and **leave the evidence with the customer** — the way SOC 2 / ISO 27001 / HIPAA reviews actually expect. :contentReference[oaicite:5]{index=5}
 
-Microsoft 365 / Entra identity-first hardening
+## What we deliver
 
-Google Workspace hardening for HIPAA-adjacent/regulated use
+- **AWS Security Baseline** — CloudTrail, Config, IAM hygiene, Security Hub/GuardDuty ready; documented for SOC 2 / ISO 27001 reviewers. :contentReference[oaicite:6]{index=6}
+- **AWS “VistaSec” CMC** — monitoring/reporting layer on top of the baseline so stakeholders can prove posture on demand. :contentReference[oaicite:7]{index=7}
+- **M365 / Entra Security Baseline** — MFA/Conditional Access, admin-role separation, collaboration/sharing controls, eDiscovery/audit readiness. :contentReference[oaicite:8]{index=8}
+- **Google Workspace HIPAA Baseline** — GWS hardening for telehealth / therapy / PHI-adjacent orgs; tenant-safe. :contentReference[oaicite:9]{index=9}
+- **DMARC / SPF / DKIM** — email/DNS authentication for Microsoft 365 and Google Workspace, with optional CI-based validation.
+- **All delivered via GitHub Actions (OIDC-only)** — modern, secretless, contractor-friendly delivery. :contentReference[oaicite:10]{index=10}
 
-Email security (DMARC / SPF / DKIM) for M365/GWS shops
-
-All of it delivered via GitHub Actions (OIDC-only)
 
 1) AWS Security Baseline
 https://github.com/fedlinllc/fedlin-aws-security-baseline
