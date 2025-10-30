@@ -2,10 +2,6 @@
 <p align="center"><b>Security Solutions Architecture · Vulnerability Management · Compliance Automation</b></p>
 <p align="center">Independent / C2C · Subcontract-ready · Customer-tenant-first</p>
 
-<h1 align="center">FEDLIN</h1>
-<p align="center"><b>Security Solutions Architecture · Vulnerability Management · Compliance Automation</b></p>
-<p align="center">Independent / C2C · Subcontract-ready · Customer-tenant-first</p>
-
 <p align="center">
   <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config%20·%20Security%20Hub-FF9900?logo=amazonaws&logoColor=white" />
   <img src="https://img.shields.io/badge/Azure-Entra%20ID%20·%20Defender%20·%20Policy-0078D4?logo=microsoftazure&logoColor=white" />
