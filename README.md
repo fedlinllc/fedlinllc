@@ -19,6 +19,18 @@
   <img src="https://img.shields.io/badge/Practice-DevSecOps-informational" />
 </p>
 
+## Table of Contents
+
+- [About](#about)
+- [What We Deliver](#what-we-deliver)
+  - [Web App Shield](#web-app-shield)
+  - [Email Authentication Configuration](#email-authentication-configuration-dmarc--spf--dkim)
+  - [Google Workspace HIPAA-Oriented Baseline](#google-workspace-hipaa-oriented-baseline)
+  - [AWS Security Baseline Implementation](#aws-security-baseline-implementation)
+  - [Microsoft 365 / Entra Security Hardening](#microsoft-365--entra-security-hardening)
+- [How we engage](#how-we-engage-business--c2c)
+- [Contact](#contact)
+
 ## About
 
 FEDLIN is a security engineering and compliance automation consultancy. We build **customer-tenant-first** solutions — evidence, logs, and configuration stay in **your** AWS, Azure/Entra, Microsoft 365, Google Workspace, or GCP environment — and we deliver changes through **GitHub Actions with OIDC** so there are no long-lived secrets to rotate or vault.
@@ -27,39 +39,28 @@ We work well with security teams, MSPs, and primes that need to **show** cloud/S
 
 ## What We Deliver
 
-### AWS Security Baseline Implementation
+### Web App Shield
 <p>
-  <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config-FF9900?logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Service-Premiere%20Web%20Security-blue" />
+  <img src="https://img.shields.io/badge/Protection-WAF%20·%20DDoS%20·%20Bot%20Mitigation-FF9900?logo=amazonaws&logoColor=white" />
   <img src="https://img.shields.io/badge/Delivery-GitHub%20Actions%20(OIDC)-000000?logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/IaC-Terraform%20(optional)-5C4EE5" />
+  <img src="https://img.shields.io/badge/IaC-Terraform%20·%20CloudFormation-5C4EE5" />
   <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001-6C757D" />
 </p>
-Establishes CloudTrail (all regions), AWS Config with baseline rules, IAM hygiene, and customer-owned logging to support SOC 2 / ISO 27001 style reviews.  
-→ https://github.com/fedlinllc/fedlin-aws-security-baseline
+Comprehensive web application security solution providing advanced protection against threats, automated security controls, and compliance-ready monitoring for modern web applications.  
+→ https://github.com/fedlinllc/fedlin-web-app-shield
 
 ---
 
-### AWS Continuous Monitoring (VistaSec CMC)
+### Email Authentication Configuration (DMARC / SPF / DKIM)
 <p>
-  <img src="https://img.shields.io/badge/AWS-Security%20Hub%20·%20GuardDuty-FF9900?logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Use--case-Continuous%20Monitoring-blue" />
-  <img src="https://img.shields.io/badge/Automation-python%20·%20bash-000000" />
-  <img src="https://img.shields.io/badge/For-Security%20·%20Compliance%20·%20MSP-6C757D" />
+  <img src="https://img.shields.io/badge/Email-DMARC%20·%20SPF%20·%20DKIM-6C757D" />
+  <img src="https://img.shields.io/badge/DNS-Customer--owned-blue" />
+  <img src="https://img.shields.io/badge/Option-CI--based%20validation-000000?logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Scripting-bash%20·%20python-lightgrey" />
 </p>
-Extends the baseline with a reporting/visibility layer so security, compliance, or MSP stakeholders can review AWS posture without manual exports.  
-→ https://github.com/fedlinllc/fedlin-aws-vistasec-cmc
-
----
-
-### Microsoft 365 / Entra Security Hardening
-<p>
-  <img src="https://img.shields.io/badge/M365-MFA%20·%20CA-2358D5?logo=microsoft&logoColor=white" />
-  <img src="https://img.shields.io/badge/Entra-Admin%20role%20separation-0078D4?logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Outcome-Audit%20%2F%20eDiscovery%20ready-6C757D" />
-  <img src="https://img.shields.io/badge/Policy-as-code-CA%20%2F%20M365%20profiles-informational" />
-</p>
-Applies identity-first controls (MFA/Conditional Access), separates privileged roles, aligns collaboration/sharing defaults, and enables audit/eDiscovery for regulated environments.  
-→ https://github.com/fedlinllc/fedlin-m365-security-baseline
+Implements sender authentication for Microsoft 365 and Google Workspace domains (SPF, DKIM) and introduces a staged DMARC policy (none → monitor → enforce), with optional CI-driven validation.  
+→ https://github.com/fedlinllc/fedlin-dmarc-spf-dkim
 
 ---
 
@@ -75,15 +76,27 @@ Secures Google Workspace for clinics, telehealth, and PHI-adjacent organizations
 
 ---
 
-### Email Authentication Configuration (DMARC / SPF / DKIM)
+### AWS Security Baseline Implementation
 <p>
-  <img src="https://img.shields.io/badge/Email-DMARC%20·%20SPF%20·%20DKIM-6C757D" />
-  <img src="https://img.shields.io/badge/DNS-Customer--owned-blue" />
-  <img src="https://img.shields.io/badge/Option-CI--based%20validation-000000?logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scripting-bash%20·%20python-lightgrey" />
+  <img src="https://img.shields.io/badge/AWS-CloudTrail%20·%20Config-FF9900?logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Delivery-GitHub%20Actions%20(OIDC)-000000?logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/IaC-Terraform%20(optional)-5C4EE5" />
+  <img src="https://img.shields.io/badge/Compliance-SOC%202%20·%20ISO%2027001-6C757D" />
 </p>
-Implements sender authentication for Microsoft 365 and Google Workspace domains (SPF, DKIM) and introduces a staged DMARC policy (none → monitor → enforce), with optional CI-driven validation.  
-→ https://github.com/fedlinllc/fedlin-dmarc-spf-dkim
+Establishes CloudTrail (all regions), AWS Config with baseline rules, IAM hygiene, and customer-owned logging to support SOC 2 / ISO 27001 style reviews.  
+→ https://github.com/fedlinllc/fedlin-aws-security-baseline
+
+---
+
+### Microsoft 365 / Entra Security Hardening
+<p>
+  <img src="https://img.shields.io/badge/M365-MFA%20·%20CA-2358D5?logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/Entra-Admin%20role%20separation-0078D4?logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Outcome-Audit%20%2F%20eDiscovery%20ready-6C757D" />
+  <img src="https://img.shields.io/badge/Policy-as-code-CA%20%2F%20M365%20profiles-informational" />
+</p>
+Applies identity-first controls (MFA/Conditional Access), separates privileged roles, aligns collaboration/sharing defaults, and enables audit/eDiscovery for regulated environments.  
+→ https://github.com/fedlinllc/fedlin-m365-security-baseline
 
 ---
 
