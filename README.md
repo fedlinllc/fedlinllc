@@ -119,25 +119,10 @@ Everything above + compliance documentation + security questionnaire support. Go
 
 ## 🎯 Who We Help
 
-```mermaid
-mindmap
-  root((FEDLIN))
-    SaaS Companies
-      Enterprise deals blocked
-      Security questionnaires
-      SOC 2 readiness
-    Healthcare
-      HIPAA compliance
-      Telehealth platforms
-      Google Workspace
-    Development Firms
-      Client security needs
-      White-label partnerships
-    Regulated Industries
-      CMMC / FedRAMP
-      NIST frameworks
-      Compliance evidence
-```
+- **SaaS Companies** — Enterprise deals blocked by security requirements
+- **Healthcare & Telehealth** — HIPAA compliance for Google Workspace
+- **Development Firms** — White-label security for your clients
+- **Regulated Industries** — CMMC, FedRAMP, NIST compliance
 
 ---
 
