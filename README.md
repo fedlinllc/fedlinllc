@@ -79,7 +79,7 @@ flowchart LR
 |---------|--------------|
 | **Web Application Security** | Security headers, WAF, CSP, A+ ratings |
 | **Cloud Security** | AWS, Azure, GCP hardening |
-| **Penetration Testing** | OWASP methodology + attestation |
+| **Penetration Testing** | OWASP methodology + findings report |
 | **Email Security** | DMARC → enforce |
 | **Google Workspace HIPAA** | HIPAA-compliant configuration |
 | **Enterprise Ready** | Full package + compliance docs |
