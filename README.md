@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&duration=3000&pause=1000&color=1565C0&center=true&vCenter=true&width=600&height=50&lines=Security+that+closes+enterprise+deals;A%2B+ratings+in+1-2+weeks;Open+source+tools+%2B+consulting)](https://fedlin.com)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&duration=3000&pause=1000&color=1565C0&center=true&vCenter=true&width=600&height=50&lines=AWS+%7C+Azure+%7C+GCP+Security;Application+Security+Hardening;OWASP+Methodology;SOC+2+%26+HIPAA+Compliance;Cloudflare+Security)](https://fedlin.com)
 
 # FEDLIN
 
